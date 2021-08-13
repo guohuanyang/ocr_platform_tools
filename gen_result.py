@@ -24,6 +24,7 @@ def get_task_ids(task_ids_path='task_ids.txt'):
 def get_extract_data(task_id):
     res = TaskManager.get_task_result(task_id)
     extract_obj = ExtractDataManager(res, task_id)
+    print(task_id, 'done')
     return extract_obj
 
 
