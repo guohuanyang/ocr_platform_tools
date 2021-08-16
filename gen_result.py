@@ -29,7 +29,7 @@ def get_extract_data(task_id):
 
 
 def gen_excel(excel_filepath, task_ids_path):
-    task_ids = get_task_ids(task_ids_path)[START:LIMIT]
+    task_ids = get_task_ids(task_ids_path)[START:]
     extract_obj_list = [get_extract_data(task_id) for task_id in task_ids]
     tpl_index = {}
     for template_name, fields_item in TEMPLATE_NAME_DICT.items():
@@ -48,6 +48,7 @@ def gen_excel(excel_filepath, task_ids_path):
             result[template_name].append(rows)
             continue
         for page_data in extract_obj.data_list:
+            rows = [extract_obj.record_id, extract_obj.filename, extract_obj.message]
             rows += ['']*20
             for field_name in page_data:
                 try:
@@ -71,4 +72,3 @@ if __name__ == '__main__':
     excel_name = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")+'.xlsx'
     task_path = 'task_ids.txt'
     gen_excel('./result/{}'.format(excel_name), task_path)
-

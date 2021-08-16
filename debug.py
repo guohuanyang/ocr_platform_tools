@@ -24,7 +24,7 @@ from tools.extract_data_manager import ExtractDataManager
 from tools.excel_manager import ExcelManager
 from tools.task_manager import TaskManager
 from config.conf import TEMPLATE_NAME_DICT, START, LIMIT
-DEBUG_TASK_ID = 258
+DEBUG_TASK_ID = 304
 
 
 def get_task_ids(task_ids_path='task_ids.txt'):
@@ -61,6 +61,7 @@ def gen_excel(excel_filepath, task_ids_path):
             result[template_name].append(rows)
             continue
         for page_data in extract_obj.data_list:
+            rows = [extract_obj.record_id, extract_obj.filename, extract_obj.message]
             rows += ['']*20
             for field_name in page_data:
                 try:
