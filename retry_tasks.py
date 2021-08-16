@@ -18,7 +18,7 @@ def get_task_ids(task_ids_path='task_ids.txt'):
 
 
 def run_retry_task():
-    task_ids = get_task_ids()[5:35]
+    task_ids = get_task_ids()
     task_ids = map(lambda x: str(x), task_ids)
     for task_id in task_ids:
         res = TaskManager.retry_task(task_id)

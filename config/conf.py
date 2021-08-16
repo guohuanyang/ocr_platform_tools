@@ -50,14 +50,14 @@ CARDS = [
 ACCEPT_SUFFIX = ('jpg', 'jpeg', 'png', 'gif', 'svg', 'bmp', 'tif', 'tiff', 'pdf')
 
 LAND_CERTIFICATE = {
-    "国土证-权利人": {"name": "land_holder", "type": "str", "func": None, "func_args": ()},
-    "国土证-证书号": {"name": "land_cert_number", "type": "str", "func": "sort_by_x_index", "func_args": ()},
-    "国土证-面积": {"name": "land_areas", "type": "str", "func": None, "func_args": ()},
-    "国土证-座落": {"name": "land_location", "type": "str", "func": None, "func_args": ()},
-    "国土证-权利期限": {"name": "land_rights", "type": "str", "func": None, "func_args": ()},
-    "国土证-权利性质": {"name": "land_nature", "type": "str", "func": None, "func_args": ()},
-    "国土证-用途": {"name": "land_purpose", "type": "str", "func": None, "func_args": ()},
-    "国土证-共有情况": {"name": "land_ownership", "type": "str", "func": None, "func_args": ()},
+    "权利人": {"name": "land_holder", "type": "str", "func": None, "func_args": ()},
+    "证书号": {"name": "land_cert_number", "type": "str", "func": "sort_by_x_index", "func_args": ()},
+    "面积": {"name": "land_areas", "type": "str", "func": None, "func_args": ()},
+    "座落": {"name": "land_location", "type": "str", "func": None, "func_args": ()},
+    "权利期限": {"name": "land_rights", "type": "str", "func": None, "func_args": ()},
+    "权利性质": {"name": "land_nature", "type": "str", "func": None, "func_args": ()},
+    "用途": {"name": "land_purpose", "type": "str", "func": None, "func_args": ()},
+    "共有情况": {"name": "land_ownership", "type": "str", "func": None, "func_args": ()},
     "是否是变更文件": {"name": "is_changed", "type": "str", "func": None, "func_args": ()},
     "留痕图": {"name": "trace_map", "type": "base64", "func": None, "func_args": ()},
 }

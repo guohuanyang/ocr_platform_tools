@@ -1,8 +1,19 @@
 # -*- coding: utf-8 -*-
 
 # -------------------------------------------------------------------------------
-# Name:         gen_result
+# Name:         debug
 # Description:  
+# Author:       guohuanyang
+# Date:         2021/8/16
+# Email         guohuanyang@datagrand.com
+# -------------------------------------------------------------------------------
+
+
+# -*- coding: utf-8 -*-
+
+# -------------------------------------------------------------------------------
+# Name:         gen_result
+# Description:
 # Author:       guohuanyang
 # Date:         2021/8/10
 # Email         guohuanyang@datagrand.com
@@ -13,6 +24,7 @@ from tools.extract_data_manager import ExtractDataManager
 from tools.excel_manager import ExcelManager
 from tools.task_manager import TaskManager
 from config.conf import TEMPLATE_NAME_DICT, START, LIMIT
+DEBUG_TASK_ID = 258
 
 
 def get_task_ids(task_ids_path='task_ids.txt'):
@@ -29,7 +41,8 @@ def get_extract_data(task_id):
 
 
 def gen_excel(excel_filepath, task_ids_path):
-    task_ids = get_task_ids(task_ids_path)[START:LIMIT]
+    # task_ids = get_task_ids(task_ids_path)[START:LIMIT]
+    task_ids = [DEBUG_TASK_ID]
     extract_obj_list = [get_extract_data(task_id) for task_id in task_ids]
     tpl_index = {}
     for template_name, fields_item in TEMPLATE_NAME_DICT.items():
