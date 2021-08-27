@@ -25,9 +25,10 @@ def gen_task_ids():
     return task_ids
 
 
-def gen_tmp_task_ids(root='./tmp_1'):
+def gen_tmp_task_ids(root='./tmp_2'):
     task_ids = []
     cat = CategoryManager('tmp', root)
+    print(len(cat.file_list))
     for file_info in cat.file_list:
         task = TaskManager.create_task(file_info.path)
         records = task['records']
@@ -48,7 +49,7 @@ def run_create_task():
 def run_create_tmp_task():
     task_ids = gen_tmp_task_ids()
     task_ids = map(lambda x: str(x), task_ids)
-    with open("task_ids_1.txt", 'w', encoding='utf-8') as f:
+    with open("task_ids_商标.txt", 'w', encoding='utf-8') as f:
         f.write(",".join(task_ids))
     print('create done')
 
