@@ -30,10 +30,10 @@ STATIC_ENV = {
     },
     "product": {
         "extract_url": "http://172.21.121.234:58016/extract",
-        "create_task_url": "http://172.21.121.234:58017/api/cms/ocr_extraction/upload",
-        "login_url": "http://172.253.32.51:58017/api/cms/login",
-        "task_detail_url": "http://172.253.32.51:58017/api/cms/ocr_extraction/record_item?record_id={}",
-        "task_retry_url": "http://172.253.32.51:58017/api/cms/ocr_extraction/record_item?record_id={}&request_method=put",
+        "create_task_url": "http://172.21.121.234:25101/api/cms/ocr_extraction/upload",
+        "login_url": "http://172.21.121.234:25101/api/cms/login",
+        "task_detail_url": "http://172.21.121.234:25101/api/cms/ocr_extraction/record_item?record_id={}",
+        "task_retry_url": "http://172.21.121.234:25101/api/cms/ocr_extraction/record_item?record_id={}&request_method=put",
     },
 }
 
