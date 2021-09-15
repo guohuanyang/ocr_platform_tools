@@ -38,7 +38,7 @@ def generate_request_id():
     return str(uuid.uuid4())
 
 
-img_path = "/Users/guohuanyang/Downloads/28、恒伦口腔医院-晋（2019）太原市不动产权第0066957号-新建南路118号1幢1-2层1011号.pdf"
+img_path = "/Users/guohuanyang/Downloads/问题文档/7.南凌物联网综合运营支撑平台系统.pdf"
 
 json_data = {"file_type": "wanli",
              "recognition_category": "document",

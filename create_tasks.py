@@ -46,13 +46,13 @@ def run_create_task():
     print('create done')
 
 
-def run_create_tmp_task():
-    task_ids = gen_tmp_task_ids()
+def run_create_tmp_task(dir_name):
+    task_ids = gen_tmp_task_ids(dir_name)
     task_ids = map(lambda x: str(x), task_ids)
-    with open("task_ids_商标.txt", 'w', encoding='utf-8') as f:
+    with open("task_ids_new.txt", 'w', encoding='utf-8') as f:
         f.write(",".join(task_ids))
     print('create done')
 
 
 if __name__ == '__main__':
-    run_create_tmp_task()
+    run_create_tmp_task('tmp_new')

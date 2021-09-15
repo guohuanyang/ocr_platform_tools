@@ -59,6 +59,7 @@ LAND_CERTIFICATE = {
     "用途": {"name": "land_purpose", "type": "str", "func": None, "func_args": ()},
     "共有情况": {"name": "land_ownership", "type": "str", "func": None, "func_args": ()},
     "是否是变更文件": {"name": "is_changed", "type": "str", "func": None, "func_args": ()},
+    "模版名称": {"name": "template_name", "type": "str", "func": None, "func_args": ()},
     "留痕图": {"name": "trace_map", "type": "base64", "func": None, "func_args": ()},
 }
 
@@ -73,6 +74,7 @@ HOUSE_CERTIFICATE = {
     "建筑面积": {"name": "house_built_areas", "type": "str", "func": None, "func_args": ()},
     "登记时间": {"name": "house_register_date", "type": "str", "func": None, "func_args": ()},
     "是否是变更文件": {"name": "house_is_changed", "type": "str", "func": None, "func_args": ()},
+    "模版名称": {"name": "template_name", "type": "str", "func": None, "func_args": ()},
     "留痕图": {"name": "trace_map", "type": "base64", "func": None, "func_args": ()},
 }
 
@@ -87,6 +89,7 @@ TRADEMARK_CERTIFICATE = {
     "类别": {"name": "trademark_type", "type": "str", "func": None, "func_args": ()},
     "是否是变更文件": {"name": "trademark_is_changed", "type": "str", "func": None, "func_args": ()},
     "留痕图": {"name": "trace_map", "type": "base64", "func": None, "func_args": ()},
+    "变更日期": {"name": "modify_date", "type": "base64", "func": None, "func_args": ()},
 }
 
 # 专利
@@ -100,6 +103,7 @@ PATENT_CERTIFICATE = {
     "授权公告日": {"name": "patent_published_date", "type": "str", "func": None, "func_args": ()},
     "是否是变更文件": {"name": "patent_is_changed", "type": "str", "func": None, "func_args": ()},
     "留痕图": {"name": "trace_map", "type": "base64", "func": None, "func_args": ()},
+    "变更日期": {"name": "modify_date", "type": "base64", "func": None, "func_args": ()},
 }
 
 # 软件著作证

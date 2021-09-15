@@ -70,5 +70,5 @@ def gen_excel(excel_filepath, task_ids_path):
 
 if __name__ == '__main__':
     excel_name = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")+'.xlsx'
-    task_path = 'task_ids_国土房权.txt'
+    task_path = 'total.txt'
     gen_excel('./result/{}'.format(excel_name), task_path)
